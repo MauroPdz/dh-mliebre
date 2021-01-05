@@ -16,9 +16,10 @@
                 <div class="logo">
                     <a href="/" class="home"><img src="/img/logo-mercado-liebre.svg" alt="Logo Mercado Liebre"></a>
                 </div>
-                <div>
-                    <input type="search" class="search" placeholder="Buscar productos, marcas y más"><i class="fa fa-search lupa"></i>
-                </div>
+                <form action="#" method="GET">
+                    <input type="search" class="search" placeholder="Buscar productos, marcas y más">
+                    <button type="submit" class="fa fa-search lupa"></button>
+                </form>
                 <div class="compra-cuotas">
                     <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
                 </div>
@@ -47,7 +48,7 @@
         <main>
             <section class="register-form">
                 <h2>Creá tu usuario</h1>
-                <form action="home.html" method="POST">
+                <form action="home.html" method="">
                     <div class="row">
                         <label for="nombre-completo">Nombre y apellido:</label>
                         <input type="text" name="nombre-completo" id="nombre-completo" placeholder="Ingresa tu nombre aqui" required>
@@ -104,8 +105,8 @@
                         <input type="password" name="password-confirm" id="password-confirm" placeholder="Repetí tu contraseña" required>
                     </div>
 
-                    <button type="submit">Enviar</button>
-                    <button type="reset">Borrar</button>
+                    <button type="submit" class="send">Enviar</button>
+                    <button type="reset" class="reset">Borrar</button>
                 </form>
             </section>
         </main>
