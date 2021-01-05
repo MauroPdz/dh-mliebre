@@ -1,0 +1,380 @@
+/* Box Sizing se le va a aplicar a todos los elementos */
+
+* { 
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: #ebebeb;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #EAC926;
+    padding: 10px;
+}
+
+header div.top-header{
+    max-width: 1200px;
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div div{
+    width: 50%;
+    text-align: center;
+}
+
+
+/* Search y lupa */
+
+header div div .search{
+    margin-left: 5px;
+    width: 83%;
+}
+
+header div .compra-cuotas {
+    width: 100%;
+    font-size: 1rem;
+}
+
+.lupa {
+    background-color: white;
+    padding: 2px;
+    border: solid 1px black;
+    margin-top: 2px;
+    border-radius: 3px;
+}
+
+/* Ofertas, Tiendas, creá tu cuenta, etc */
+
+header div .nav-right, .nav-left{
+    display: none;
+}
+
+header div nav {
+    max-width: 600px;
+}
+
+header .burger-menu {
+    width: 40px;
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: #1259c3;
+    color: white;
+    text-align: center;
+    margin: auto;
+    border-radius: 5px;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+section img {
+    width: 100%;
+}
+
+main section h3 {
+    font-size: 1.3rem; /* 24px */
+    color: #666;
+    margin-left: 10px;
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main section h4 {
+    color: #666;
+}
+
+main section.contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main .precios { 
+    width: 30%; 
+}
+
+main .descuentos {
+    width: 70%;
+}
+
+p.precios {
+    font-size: 1.125rem; /* 18px */
+}
+
+p.descuentos,
+h4.descripcion {
+    font-size: 1rem; /* 16px */
+}
+
+main h4.descripcion { display: none; }
+
+main section div article {
+    margin: 10px 0;
+    background-color: #fff;
+}
+
+main article div {
+    border-top: solid 1px #ebebeb;
+    margin: 0 15px
+}
+
+main article img { width: 100%;}
+
+main div i,
+.descuentos {
+    color: #39b54a;
+}
+
+main .description { width: 30%; }
+
+main div { position: relative; }
+
+/* Icono del camión */
+
+main div i {
+    font-size: 1rem;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: solid 1px #39b54a;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main .precios {
+    width: 70%;
+    display: inline;
+}
+
+main .descuentos {
+    width: 30%;
+    display: inline;
+}
+
+/* Formularios */
+
+.login-form,
+.register-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.login-form h2 {
+    margin: 1.5rem 0;
+}
+
+form p {
+    margin-bottom: 1rem;
+    display: flex;
+} 
+
+label { 
+    margin-bottom: 1rem;
+    display: block;
+ }
+
+input {
+    margin-bottom: 1rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 1px solid #666;
+}
+
+input:hover {
+    border-color: tomato;
+}
+
+main form .row {
+    margin-bottom: 1rem;
+}
+
+form button {
+    background-color: #1259c3;
+    color: white;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: .5rem;
+    margin: .5rem auto;
+    display: block;
+}
+
+/* Formulario de Registro */
+
+.register-form form {
+    background-color: white;
+    padding: 1rem;
+    margin: .5rem;
+    border-radius: .5rem;
+}
+
+main .register-form h2 {
+    margin: 1.5rem .5rem;
+}
+
+.login-form form input{
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+
+footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer div i,
+footer div h3,
+footer div p{
+    max-width: 350px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer .imgs-footer {
+    font-size: 40px;
+    margin-top: 40px;
+    color: #1259c3;
+}
+
+footer span .rights {
+    max-width: 400px;
+    text-align: left;
+}
+
+
+@media (min-width: 576px) {
+
+    header .top-header{
+        display: flex;
+        flex-wrap: wrap;
+    }
+  
+    /* Search y lupa */
+    
+    header div div {
+        width: 30%;
+    }
+    
+    header div div.compra-cuotas {
+        width: 30%;
+        font-size: .75rem;
+    }
+
+    header div.bottom-header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+ 
+    /* Ofertas, Tiendas, creá tu cuenta, etc */
+
+    header div a {
+        text-decoration: none;
+        color: black;
+        margin: 0 10px;
+    }
+
+    header div a:hover {
+        color: #1259c3
+    }
+
+    header div div.nav-right{
+        width: 50%;
+        font-size: 1rem;
+        text-align: left;
+        margin-left: 70px;
+        display: inline-block;
+    }
+    
+    header div div.nav-left{
+        width: 50%;
+        font-size: 1rem;
+        text-align: right;
+        margin-right: 70px;
+        display: inline-block;
+    }
+
+    header .burger-menu { display: none; }
+
+    main section div.contenedor-productos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+    }
+
+    main section h3 {
+        margin-left: 30px;
+    }
+
+    main section div article {
+        width: 44%;
+        margin: .5rem;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100); 
+    }
+
+    main h4.descripcion { display: block; }
+    
+
+}
+
+
+@media (min-width: 768px) {
+
+    
+    header div .nav-right,
+    header div .nav-left {
+        font-size: 1rem;
+    }
+
+   
+    /* Search y lupa */
+    
+    header div div.compra-cuotas {
+        font-size: 1rem;
+    }
+
+    main section h3 {
+        margin-left: 45px;
+    }
+    
+    main section div article {
+        width: 22%;
+    }
+
+    p.descuentos,
+    h4.descripcion {
+        font-size: 1rem; /* 16px */
+    }
+
+}
+
+/*
+Paleta de colores  
+Amarillo: #EAC926; 
+Azul: #03264C; 
+Celeste: #1259c3; 
+Gris oscuro: #666; 
+Gris claro: #ebebeb; 
+Verde: #39b54a;
