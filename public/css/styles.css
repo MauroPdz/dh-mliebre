@@ -41,16 +41,16 @@ header .logo {
 }
 
 header div form {
-    width: 50%;
-    text-align: center;    
+    width: 50%;  
 }
 
 /* Search y lupa */
 
-header div div .search{
-    margin-left: 0;
-    width: 83%;
+header div form .search{
+    margin-left: .5rem;
+    width: 70%;
 }
+
 
 header div .compra-cuotas {
     width: 100%;
@@ -380,7 +380,10 @@ footer span .rights {
         font-size: 1rem;
     }
 
-   
+    header form input{
+        width: 90%;
+    }
+
     /* Search y lupa */
     
     header div div.compra-cuotas {
