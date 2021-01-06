@@ -241,6 +241,11 @@ form button.reset {
     display: block;
 }
 
+form button:hover.send,
+form button:hover.reset {
+    background-color: #0022AA;
+}
+
 /* Formulario de Registro */
 
 .register-form form {
@@ -278,6 +283,10 @@ footer .imgs-footer {
     font-size: 40px;
     margin: 40px 0 20px 0;
     color: #1259c3;
+}
+
+footer div i:hover.imgs-footer {
+    color: #0022AA;
 }
 
 footer span .rights {
@@ -408,6 +417,10 @@ footer span .rights {
         justify-content: center;
         margin: 0 auto;
         max-width: 1200px;
+    }
+
+    footer div {
+        padding: 0 30px;
     }
 }
 
