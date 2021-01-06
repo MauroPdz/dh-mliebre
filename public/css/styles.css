@@ -36,16 +36,19 @@ header div div {
     text-align: center;
 }
 
-header div form {
-    width: 50%;
-    text-align: center;
+header .logo {
+    padding: 5px;
 }
 
+header div form {
+    width: 50%;
+    text-align: center;    
+}
 
 /* Search y lupa */
 
 header div div .search{
-    margin-left: 5px;
+    margin-left: 0;
     width: 83%;
 }
 
@@ -92,17 +95,15 @@ section img {
     width: 100%;
 }
 
-main section h3 {
+main section h3.titulares {
     font-size: 1.3rem; /* 24px */
     color: #666;
     margin-left: 10px;
-    padding: 10px 0;
+    padding: 20px 0;
     display: flex;
     flex-wrap: wrap;
-}
-
-main section h4 {
-    color: #666;
+    border-bottom: solid 0.2rem rgb(200, 200, 200);
+    margin-bottom: 1rem;
 }
 
 main section.contenedor-productos {
@@ -119,16 +120,20 @@ main .descuentos {
     width: 70%;
 }
 
-p.precios {
-    font-size: 1.125rem; /* 18px */
+main .precios,
+main .descuentos {
+    align-content: baseline;
 }
 
-p.descuentos,
-h4.descripcion {
+p.precios,
+h3.descripcion {
+    font-size: 1.125rem; /* 18px */
+    color: #666
+}
+
+p.descuentos{
     font-size: 1rem; /* 16px */
 }
-
-main h4.descripcion { display: none; }
 
 main section div article {
     margin: 10px 0;
@@ -164,6 +169,17 @@ main div i {
     position: absolute;
     right: 20px;
     top: -15px;
+}
+
+main h3.descripcion { display: none; }
+
+main section article:hover i{
+    transform: rotate(-0.25turn);
+}
+
+main section article:hover .descripcion {
+    display: block;
+    padding: 10px 0 10px 0;
 }
 
 main .precios {
@@ -260,7 +276,7 @@ footer div p{
 
 footer .imgs-footer {
     font-size: 40px;
-    margin-top: 40px;
+    margin: 40px 0 20px 0;
     color: #1259c3;
 }
 
@@ -334,19 +350,25 @@ footer span .rights {
         justify-content: center; 
     }
 
-    main section h3 {
+    main section h3.titulares {
         margin-left: 30px;
     }
 
     main section div article {
         width: 44%;
         margin: .5rem;
-        box-shadow: 0px 0px 10px rgb(100, 100, 100); 
     }
 
-    main h4.descripcion { display: block; }
-    
+    main section div article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
 
+    main h3.descripcion:hover { display: inline; }
+
+    footer span p{
+        margin-left: 20px;
+    }
+    
 }
 
 
@@ -365,7 +387,7 @@ footer span .rights {
         font-size: 1rem;
     }
 
-    main section h3 {
+    main section h3.titulares {
         margin-left: 45px;
     }
     
@@ -374,10 +396,16 @@ footer span .rights {
     }
 
     p.descuentos,
-    h4.descripcion {
+    h3.descripcion {
         font-size: 1rem; /* 16px */
     }
 
+    footer section{ 
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
 }
 
 /*
